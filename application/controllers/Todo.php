@@ -53,7 +53,10 @@ class Todo extends CI_Controller {
 
 		if($insert)
 		{
-			Redirect(base_url().'note', false);
+			echo "<script>";
+			echo " 
+			window.location.href=".base_url('note').";
+			</script>";
 		}
 
 		}
